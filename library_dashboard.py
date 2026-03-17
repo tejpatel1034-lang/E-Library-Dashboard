@@ -9,7 +9,7 @@ class LibraryDashboard:
     def __init__(self):
         self.data = None
 
-    # Load and Validate Data 
+    # Load and validate Data 
     def load_data(self, file_path=None):
         try:
             print("\nLoad Data Menu")
