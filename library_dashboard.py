@@ -6,7 +6,7 @@ from datetime import datetime
 
 class LibraryDashboard:
 
-    def _init_(self):
+    def __init__(self):
         self.data = None
 
     # Load and Validate Data 
@@ -28,7 +28,7 @@ class LibraryDashboard:
             match option:
                 case 1:
                     if file_path is None:
-                        file_path = "library_transactions.csv"
+                        file_path = "C:/Users/tejpa/OneDrive/Documents/R & W Projects/Pr 10 E-Library-Dashboard/library_transactions.csv"
                     self.data = pd.read_csv(file_path)
                 case 2:
                     file_path = input("Enter CSV file path: ")
